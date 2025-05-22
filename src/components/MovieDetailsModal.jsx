@@ -1,6 +1,6 @@
 import {getImgUrl} from "../utility/cine-utility.js";
 
-const CartModal = ({selectedMovie,onClose}) => {
+const MovieDetailsModal = ({selectedMovie,onClose,onAddToCart}) => {
     console.log(selectedMovie);
     return (
         <div
@@ -31,6 +31,10 @@ const CartModal = ({selectedMovie,onClose}) => {
                             <a
                                 className="bg-primary rounded-lg py-2 px-5 flex items-center justify-center gap-2 text-[#171923] font-semibold text-sm"
                                 href="#"
+                                onClick={(e) =>{
+                                  onAddToCart(e, selectedMovie);
+                                  onClose();
+                                }}
                             >
                                 <img src="/assets/tag.svg" alt=""/>
                                 <span>${selectedMovie.price} | Add to Cart</span>
@@ -49,4 +53,4 @@ const CartModal = ({selectedMovie,onClose}) => {
         </div>
     )
 }
-export default CartModal;
+export default MovieDetailsModal;
