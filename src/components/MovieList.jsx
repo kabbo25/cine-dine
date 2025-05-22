@@ -2,7 +2,7 @@ import {getAllMovies} from "../data/data.js";
 import MovieCard from "./MovieCard.jsx";
 import {useState} from "react";
 import MovieDetailsModal from "./MovieDetailsModal.jsx";
-import {useMovie} from "../context/ThemeContext.jsx";
+import {useMovie} from "../context/MovieContext.jsx";
 
 const MovieList = () => {
     const movies = getAllMovies();

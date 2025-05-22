@@ -1,4 +1,4 @@
-import {useMovie} from "../context/ThemeContext.jsx";
+import {useMovie} from "../context/MovieContext.jsx";
 import CartMovieItem from "./CartMovieItem.jsx";
 
 const CartModal = ({onClose}) => {

@@ -71,7 +71,7 @@ CineRental is a modern movie rental web application built with React, Vite, and 
 
 ## Core Concepts
 ### State Management
-- Uses React Context (`src/context/ThemeContext.jsx`) to manage cart state globally.
+- Uses React Context (`src/context/MovieContext.jsx`) to manage cart state globally.
 - `useMovie` hook provides access to cart data and setter.
 
 ### Components
@@ -96,7 +96,7 @@ CineRental is a modern movie rental web application built with React, Vite, and 
 - **Add Movies**: Update `src/data/data.js` to add or modify movie entries.
 - **Styling**: Modify Tailwind classes in component files or extend Tailwind config.
 - **Assets**: Place new images in `public/assets/movie-covers/` and reference them in movie data.
-- **Context**: Extend `ThemeContext.jsx` to manage additional global state as needed.
+- **Context**: Extend `MovieContext.jsx` to manage additional global state as needed.
 
 
 

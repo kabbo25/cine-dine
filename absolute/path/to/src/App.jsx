@@ -9,11 +9,12 @@ import {ThemeContextProvider, useTheme} from "./context/ThemeContext.jsx";
 function AppContent() {
     const [showCartModal, setShowCartModal] = useState(false);
     const {theme} = useTheme(); // Now this works correctly
-
+    console.log(theme);
+    
     const handleShowCartModal = () => {
         setShowCartModal(true);
     }
-
+    
     return (
         <MovieContextProvider>
             <div className={`dark:bg-body bg-white font-[Sora] dark:text-white text-dark ${theme ==='dark'?'dark':'light'}`}>
